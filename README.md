@@ -38,11 +38,11 @@ The table structure includes columns with Transaction_ID, sales_Date, Customer_I
 Data was then inserted into the table.
 ## DATA ANALYSIS
 The following SQL queries were developed to answer specific business Questions:
-1.	** Write a query to create a database SALESRECORD **
+1.	**Write a query to create a database SALESRECORD**
 ```sql
 create database SALESRECORD;
 ```
-2.	/*write a query to create Table RETAILSALES*/
+2.	**write a query to create Table RETAILSALES**
 ```sql
 CREATE table RETAILSALES (
 TRANSACTION_ID CHAR(5) PRIMARY KEY,
@@ -57,7 +57,7 @@ TOTAL_SALES FLOAT
 );
 ```
 
-3.	/*Write a query and use it to add data into the RETAILSALES table created.*/
+3.	**Write a query and use it to add data into the RETAILSALES table created.**
 ```sql
 insert into RETAILSALES(
 TRANSACTION_ID,
@@ -132,23 +132,23 @@ VALUES ("T100", "2024/01/01", "123", "MALE", "55", "SPORTS", "9", "365", "3285")
 ```
 
 
-4.	/* write a query and use it to check if data entered is reflecting in the table*/
+4.	**write a query and use it to check if data entered is reflecting in the table**
 ```sql
 SELECT * FROM RETAILSALES;
 ```
-5.	/*Write a query to determine the total number of records in the dataset*/
+5.	**Write a query to determine the total number of records in the dataset**
 ```sql
 SELECT count(*) FROM RETAILSALES;
 ```
-6.	/*Write a query to identify the unique categories in the dataset*/
+6.	**Write a query to identify the unique categories in the dataset**
 ```sql
 select distinct CATEGORY FROM RETAILSALES;
 ```
-7.	/*write a query and use it to find out how many categories  we have in the dataset.*/
+7.	**write a query and use it to find out how many categories  we have in the dataset.**
 ```sql
 select count(distinct CATEGORY) FROM RETAILSALES;
 ```
-8.	/* Customer_Id 393 had mispelt name Electronis instead ELECTRONICS. Write a query and make changes to the name.*/
+8.	**Customer_Id 393 had mispelt name Electronis instead ELECTRONICS. Write a query and make changes to the name.**
 ```sql
 UPDATE RETAILSALES
 SET CATEGORY="ELECTRONICS"
@@ -157,15 +157,15 @@ WHERE CUSTOMER_ID="393";
 
 
 
-9.	/*Write a query to find out how many Unique Customers are in the dataset*/
+9.	**Write a query to find out how many Unique Customers are in the dataset**
 ```sql
 select  count(DISTINCT CUSTOMER_ID) FROM RETAILSALES;
 ```
-10.	/*write a query and use it to retrieve the total sales*/
+10.	**write a query and use it to retrieve the total sales**
 ```sql
 Select sum(TOTAL_SALES) FROM RETAILSALES;
 ```
-11.	/*write a Query to calculate TOTAL SALES Per  PRODUCT CATEGORY*/
+11.	**write a Query to calculate TOTAL SALES Per  PRODUCT CATEGORY**
 ```sql
 SELECT CATEGORY,
 sum(TOTAL_SALES) as netsales
@@ -173,7 +173,7 @@ FROM RETAILSALES
 group by CATEGORY
 order by netsales desc;
 ```
-12.	/*write a query to determine which product category had highest sales*/
+12.	**write a query to determine which product category had highest sales**
 ```sql
 SELECT CATEGORY,
 sum(TOTAL_SALES) as netsales
@@ -182,7 +182,7 @@ group by CATEGORY
 order by netsales desc
 limit 1;
 ```
-13.	/*write a query to determine which product category had lowest sales*/
+13.	**write a query to determine which product category had lowest sales**
 ```sql
 SELECT CATEGORY,
 sum(TOTAL_SALES) as netsales
@@ -191,7 +191,7 @@ group by CATEGORY
 order by netsales asc
 limit 1;
 ```
-14.	/*write a query to determine which 3 product categories performed well*/
+14.	**write a query to determine which 3 product categories performed well**
 ```sql
 SELECT CATEGORY,
 sum(TOTAL_SALES) as netsales
@@ -200,7 +200,7 @@ group by CATEGORY
 order by netsales desc
 limit 3;
 ```
-15.	/*write a query to determine  which 3 product categories didn’t perform well*/
+15.	**write a query to determine  which 3 product categories didn’t perform well**
 ```sql
 SELECT CATEGORY,
 sum(TOTAL_SALES) as netsales
@@ -209,41 +209,41 @@ group by CATEGORY
 order by netsales ASC
 limit 3;
 ```
-16.	/*write an sql query to determine  total quantity*/
+16.	**write an sql query to determine  total quantity**
 ```sql
 select sum(QUANTITY) AS TOTAL_QUANTITY FROM RETAILSALES;
 ```
 
-17.	/* Write a query to determine the average sales*/
+17.	**Write a query to determine the average sales**
 ```sql
 select avg(TOTAL_SALES) AS AVERAGESALES FROM RETAILSALES;
 ```
-##KEY FINDINGS
-###1. Revenue Overview
-**Total Revenue: **$
+## KEY FINDINGS
+### 1. Revenue Overview
+**Total Revenue:** $
 **Best Performing Product Category:** CLOTHING with $        in sales
 **Lowest Selling product category:**           with $      in sales
-###2. Top 3 Product categories by revenue.
+### 2. Top 3 Product categories by revenue.
 
 
 
 
-###3. Top 3 product categories by quantity
+### 3. Top 3 product categories by quantity
 
 
 
-###4. Bottom 3 product categories by revenue
-
-
-
-
-###5. Bottom 3 product categories by quantity
+### 4. Bottom 3 product categories by revenue
 
 
 
 
+### 5. Bottom 3 product categories by quantity
 
-##RECOMMENDATIONS
+
+
+
+
+## RECOMMENDATIONS
 •	Increase marketing focus on high performing product categories.
 •	Analyze low-performing product categories and investigate promotional opportunities to improve on sales.
 •	Target top customers with exclusive offers.
