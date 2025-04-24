@@ -38,7 +38,7 @@ The table structure includes columns with Transaction_ID, sales_Date, Customer_I
 Data was then inserted into the table.
 ## DATA ANALYSIS
 The following SQL queries were developed to answer specific business Questions:
-1.	*Write a query to create a database SALESRECORD*
+1.	** Write a query to create a database SALESRECORD **
 ```sql
 create database SALESRECORD;
 ```
