@@ -4,7 +4,7 @@
 The primary goal of this project is to perform a comprehensive analysis of sales data using SQL to uncover trends, identify high performing product category, low performing product categories  and provide actionable insights to support strategic decision making.
 ## DATASET DESCRIPTION
 The dataset contains structured data for sales transactions. It will be used to support reporting, analytics and decision making processes.
-# The key components of the dataset include:
+## The key components of the dataset include:
  •	Tables: organized collections of data.  
  
  •	Relationships: Defined using primary and foreign keys to maintain data integrity across tables.
@@ -25,32 +25,48 @@ Check for NULLS and missing data
  
  Outlier check
  
-2.	Evaluate product performance
-### Determine the best selling  product categories based on revenue generated.
-### Determine underperforming product categories.
-3.	Business Analysis
-### Use SQL to answer specific business questions and derive insights from the sales data.
-4.	Support strategic decision-making 
+### 2.	Evaluate product performance
+
+ Determine the best selling  product categories based on revenue generated.
+
+ Determine underperforming product categories.
+ 
+### 3.	Business Analysis
+
+ Use SQL to answer specific business questions and derive insights from the sales data.
+ 
+### 4.	Support strategic decision-making 
+
 Provide insights that help the business with marketing efforts and pricing strategies.
+
 ## DATA SOURCE
+
 The data used in this analysis was sourced from the business and database created and the values entered into the table.
 
 
 ## PROJECT STRUCTURE
-1.	DATABASE SET-UP
-### •	Database creation
+### 1.	DATABASE SET-UP
+
+#### •	Database creation
+
 The project starts by creating a database named SALESRECORD
-### •	Table creation
+
+ #### •	Table creation
+ 
 A table named RETAILSALES is created to store the sales data.
 The table structure includes columns with Transaction_ID, sales_Date, Customer_ID, Age, Product_Category, Quantity_Sold and Revenue.
 Data was then inserted into the table.
+
 ## DATA ANALYSIS
 The following SQL queries were developed to answer specific business Questions:
+
 1.	**Write a query to create a database SALESRECORD**
 ```sql
 create database SALESRECORD;
 ```
+
 2.	**write a query to create Table RETAILSALES**
+   
 ```sql
 CREATE table RETAILSALES (
 TRANSACTION_ID CHAR(5) PRIMARY KEY,
@@ -227,31 +243,36 @@ select sum(QUANTITY) AS TOTAL_QUANTITY FROM RETAILSALES;
 select avg(TOTAL_SALES) AS AVERAGESALES FROM RETAILSALES;
 ```
 ## KEY FINDINGS
-### 1. Revenue Overview
+ 1. **Revenue Overview**
+    
 **Total Revenue:** $
 **Best Performing Product Category:** CLOTHING with $        in sales
 **Lowest Selling product category:**           with $      in sales
-### 2. Top 3 Product categories by revenue.
+
+ 2. **Top 3 Product categories by revenue.**
 
 
 
 
-### 3. Top 3 product categories by quantity
+ 3. **Top 3 product categories by quantity**
 
 
 
-### 4. Bottom 3 product categories by revenue
+ 4. **Bottom 3 product categories by revenue**
 
 
 
 
-### 5. Bottom 3 product categories by quantity
+5. **Bottom 3 product categories by quantity**
 
 
 
 
 
 ## RECOMMENDATIONS
-# •	Increase marketing focus on high performing product categories.
-# •	Analyze low-performing product categories and investigate promotional opportunities to improve on sales.
-# •	Target top customers with exclusive offers.
+
+•	Increase marketing focus on high performing product categories.
+
+•	Analyze low-performing product categories and investigate promotional opportunities to improve on sales.
+
+•	Target top customers with exclusive offers.
