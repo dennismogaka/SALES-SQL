@@ -4,8 +4,8 @@
 The primary goal of this project is to perform a comprehensive analysis of sales data using SQL to uncover trends, identify high performing product category, low performing product categories  and provide actionable insights to support strategic decision making.
 ## DATASET DESCRIPTION
 The dataset contains structured data for sales transactions. It will be used to support reporting, analytics and decision making processes.
-The key components of the dataset include:
-### •	Tables: organized collections of data.
+# The key components of the dataset include:
+ •	Tables: organized collections of data.
 ### •	Relationships: Defined using primary and foreign keys to maintain data integrity across tables.
 ### •	Data types: Each column has a defined data type. E.g INT, CHAR, VARCHAR, DATE to ensure consistency.
 ## PROJECT OBJECTIVES
@@ -244,6 +244,6 @@ select avg(TOTAL_SALES) AS AVERAGESALES FROM RETAILSALES;
 
 
 ## RECOMMENDATIONS
-•	Increase marketing focus on high performing product categories.
-•	Analyze low-performing product categories and investigate promotional opportunities to improve on sales.
-•	Target top customers with exclusive offers.
+# •	Increase marketing focus on high performing product categories.
+# •	Analyze low-performing product categories and investigate promotional opportunities to improve on sales.
+# •	Target top customers with exclusive offers.
