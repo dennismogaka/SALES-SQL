@@ -5,8 +5,10 @@ The primary goal of this project is to perform a comprehensive analysis of sales
 ## DATASET DESCRIPTION
 The dataset contains structured data for sales transactions. It will be used to support reporting, analytics and decision making processes.
 # The key components of the dataset include:
- •	Tables: organized collections of data.
+ •	Tables: organized collections of data.  
+ 
  •	Relationships: Defined using primary and foreign keys to maintain data integrity across tables.
+ 
  •	Data types: Each column has a defined data type. E.g INT, CHAR, VARCHAR, DATE to ensure consistency.
 ## PROJECT OBJECTIVES
 # 1.	Perform Exploratory Data Analysis
