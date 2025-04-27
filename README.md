@@ -11,14 +11,20 @@ The dataset contains structured data for sales transactions. It will be used to 
  
  •	Data types: Each column has a defined data type. E.g INT, CHAR, VARCHAR, DATE to ensure consistency.
 ## PROJECT OBJECTIVES
-# 1.	Perform Exploratory Data Analysis
+### 1.	Perform Exploratory Data Analysis
 •	Perform basic Exploratory Data Analysis to understand the dataset:
 Check for NULLS and missing data
-### Check for duplicates
-### Determine the total Revenue
-### Determine the total customers
-### Determine the total product categories
-### Outlier check
+
+ Check for duplicates
+ 
+ Determine the total Revenue
+
+ Determine the total customers
+
+ Determine the total product categories
+ 
+ Outlier check
+ 
 2.	Evaluate product performance
 ### Determine the best selling  product categories based on revenue generated.
 ### Determine underperforming product categories.
