@@ -246,7 +246,9 @@ select avg(TOTAL_SALES) AS AVERAGESALES FROM RETAILSALES;
  1. **Revenue Overview**
     
 **Total Revenue:** $
+
 **Best Performing Product Category:** CLOTHING with $        in sales
+
 **Lowest Selling product category:**           with $      in sales
 
  2. **Top 3 Product categories by revenue.**
