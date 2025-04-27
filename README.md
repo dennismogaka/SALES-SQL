@@ -245,32 +245,69 @@ select avg(TOTAL_SALES) AS AVERAGESALES FROM RETAILSALES;
 ### KEY FINDINGS
  1. **Revenue Overview**
     
-**Total Revenue:** $
+**Total Revenue:** 
+```SQL
 
-**Best Performing Product Category:** CLOTHING with $        in sales
+select sum(TOTAL_SALES) AS NETSALES FROM RETAILSALES;
 
-**Lowest Selling product category:**           with $      in sales
+```
+
+**Best Performing Product Category:** 
+```SQL
+SELECT CATEGORY,
+sum(TOTAL_SALES) as netsales
+FROM RETAILSALES
+group by CATEGORY
+order by netsales desc
+limit 1;
+```
+**Lowest Selling product category:** 
+```SQL
+SELECT CATEGORY,
+sum(TOTAL_SALES) as netsales
+FROM RETAILSALES
+group by CATEGORY
+order by netsales asc
+limit 1;
+```
 
  2. **Top 3 Product categories by revenue.**
-
-
-
+```sql
+SELECT CATEGORY,
+sum(TOTAL_SALES) as netsales
+FROM RETAILSALES
+group by CATEGORY
+order by netsales desc
+limit 3;
+```
 
  3. **Top 3 product categories by quantity**
-
-
-
+```sql
+SELECT CATEGORY,
+sum(QUANTITY) as totalquantity
+FROM RETAILSALES
+group by CATEGORY
+order by totalquantity desc
+limit 3;
+```
  4. **Bottom 3 product categories by revenue**
-
-
-
-
+```sql
+SELECT CATEGORY,
+sum(TOTAL_SALES) as netsales
+FROM RETAILSALES
+group by CATEGORY
+order by netsales ASC
+limit 3;
+```
 5. **Bottom 3 product categories by quantity**
-
-
-
-
-
+```sql
+SELECT CATEGORY,
+sum(QUANTITY) as totalquantity
+FROM RETAILSALES
+group by CATEGORY
+order by totalquantity asc
+limit 3;
+```
 ### RECOMMENDATIONS
 
 •	Increase marketing focus on high performing product categories.
