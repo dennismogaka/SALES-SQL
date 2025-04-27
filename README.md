@@ -1,17 +1,17 @@
 # SALES-SQL
 
-## PROJECT OVERVIEW
+### PROJECT OVERVIEW
 The primary goal of this project is to perform a comprehensive analysis of sales data using SQL to uncover trends, identify high performing product category, low performing product categories  and provide actionable insights to support strategic decision making.
-## DATASET DESCRIPTION
+### DATASET DESCRIPTION
 The dataset contains structured data for sales transactions. It will be used to support reporting, analytics and decision making processes.
-## The key components of the dataset include:
+### The key components of the dataset include:
  •	Tables: organized collections of data.  
  
  •	Relationships: Defined using primary and foreign keys to maintain data integrity across tables.
  
  •	Data types: Each column has a defined data type. E.g INT, CHAR, VARCHAR, DATE to ensure consistency.
-## PROJECT OBJECTIVES
-### 1.	Perform Exploratory Data Analysis
+### PROJECT OBJECTIVES
+#### 1.	Perform Exploratory Data Analysis
 •	Perform basic Exploratory Data Analysis to understand the dataset:
 Check for NULLS and missing data
 
@@ -25,39 +25,39 @@ Check for NULLS and missing data
  
  Outlier check
  
-### 2.	Evaluate product performance
+#### 2.	Evaluate product performance
 
  Determine the best selling  product categories based on revenue generated.
 
  Determine underperforming product categories.
  
-### 3.	Business Analysis
+#### 3.	Business Analysis
 
  Use SQL to answer specific business questions and derive insights from the sales data.
  
-### 4.	Support strategic decision-making 
+#### 4.	Support strategic decision-making 
 
 Provide insights that help the business with marketing efforts and pricing strategies.
 
-## DATA SOURCE
+### DATA SOURCE
 
 The data used in this analysis was sourced from the business and database created and the values entered into the table.
 
 
-## PROJECT STRUCTURE
-### 1.	DATABASE SET-UP
+### PROJECT STRUCTURE
+#### 1.	DATABASE SET-UP
 
-#### •	Database creation
+##### •	Database creation
 
 The project starts by creating a database named SALESRECORD
 
- #### •	Table creation
+ ##### •	Table creation
  
 A table named RETAILSALES is created to store the sales data.
 The table structure includes columns with Transaction_ID, sales_Date, Customer_ID, Age, Product_Category, Quantity_Sold and Revenue.
 Data was then inserted into the table.
 
-## DATA ANALYSIS
+### DATA ANALYSIS
 The following SQL queries were developed to answer specific business Questions:
 
 1.	**Write a query to create a database SALESRECORD**
@@ -242,7 +242,7 @@ select sum(QUANTITY) AS TOTAL_QUANTITY FROM RETAILSALES;
 ```sql
 select avg(TOTAL_SALES) AS AVERAGESALES FROM RETAILSALES;
 ```
-## KEY FINDINGS
+### KEY FINDINGS
  1. **Revenue Overview**
     
 **Total Revenue:** $
@@ -271,7 +271,7 @@ select avg(TOTAL_SALES) AS AVERAGESALES FROM RETAILSALES;
 
 
 
-## RECOMMENDATIONS
+### RECOMMENDATIONS
 
 •	Increase marketing focus on high performing product categories.
 
