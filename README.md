@@ -1,9 +1,21 @@
 # SALES-SQL
 
+## Table of Contents
+1. [Project Overview](#project-overview)  
+2. [Dataset Description](#dataset-description)  
+3. [Project Objectives](#project-objectives)  
+4. [Data Source](#data-source)  
+5. [Project Structure](#project-structure)  
+6. [Data Analysis](#data-analysis)  
+7. [Key Findings](#key-findings)  
+8. [Recommendations](#recommendations)
+   
 ### PROJECT OVERVIEW
 The primary goal of this project is to perform a comprehensive analysis of sales data using SQL to uncover trends, identify high performing product category, low performing product categories  and provide actionable insights to support strategic decision making.
+
 ### DATASET DESCRIPTION
 The dataset contains structured data for sales transactions. It will be used to support reporting, analytics and decision making processes.
+
 ### The key components of the dataset include:
  •	Tables: organized collections of data.  
  
@@ -11,6 +23,7 @@ The dataset contains structured data for sales transactions. It will be used to 
  
  •	Data types: Each column has a defined data type. E.g INT, CHAR, VARCHAR, DATE to ensure consistency.
 ### PROJECT OBJECTIVES
+
 #### 1.	Perform Exploratory Data Analysis
 •	Perform basic Exploratory Data Analysis to understand the dataset:
 Check for NULLS and missing data
@@ -178,9 +191,6 @@ UPDATE RETAILSALES
 SET CATEGORY="ELECTRONICS"
 WHERE CUSTOMER_ID="393";
 ```
-
-
-
 9.	**Write a query to find out how many Unique Customers are in the dataset**
 ```sql
 select  count(DISTINCT CUSTOMER_ID) FROM RETAILSALES;
